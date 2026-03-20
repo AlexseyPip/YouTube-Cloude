@@ -43,7 +43,7 @@ class YouTubeEncoder:
             '1100': (128, 0, 0),      # Бордовый
             '1101': (0, 0, 128),      # Темно-синий
             '1110': (192, 192, 192),  # Светло-серый
-            '1111': (255, 255, 255)   # Белый
+            '1111': (255, 255, 255)   # Белый 
         }
         
         # Маркеры по углам
@@ -60,11 +60,11 @@ class YouTubeEncoder:
         self.eof_bytes = self.eof_marker.encode('utf-8')
         
         print("="*60)
-        print("🎬 КОДИРОВЩИК YouTube (6 FPS)")
+        print("КОДИРОВЩИК YouTube (6 FPS)")
         print("="*60)
-        print(f"📊 Сетка: {self.blocks_x} x {self.blocks_y} блоков на регион")
-        print(f"🎞️  FPS: {self.fps}")
-        print(f"🔐 Шифрование: {'ВКЛ' if self.use_encryption else 'ВЫКЛ'}")
+        print(f"Сетка: {self.blocks_x} x {self.blocks_y} блоков на регион")
+        print(f"FPS: {self.fps}")
+        print(f"Шифрование: {'ВКЛ' if self.use_encryption else 'ВЫКЛ'}")
     
     def _encrypt_data(self, data):
         """XOR шифрование с ключом"""
